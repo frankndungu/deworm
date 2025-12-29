@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Deworm Reminder
+
+A simple web application that helps adults remember to deworm regularly. The WHO recommends deworming every 3 months in endemic areas, but most people haven't done it since childhood.
+
+## About
+
+This tool calculates your next deworming date based on when you last dewormed and provides calendar reminders to help you stay on track. No signup required, no data collection - just a straightforward utility.
+
+## Features
+
+- Calculate next deworming date (3 months from last dose)
+- Download calendar reminder (.ics file) compatible with Google Calendar, Apple Calendar, and Outlook
+- Copy reminder to clipboard
+- Mobile-responsive design
+- Zero data collection - everything runs client-side
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Icons**: Lucide React
+- **Fonts**: DM Serif Display, Karla
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20.x or higher
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/deworming.git
+cd deworming
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+deworming/
+├── app/
+│   ├── globals.css       # Global styles and Tailwind configuration
+│   ├── layout.tsx        # Root layout with metadata
+│   └── page.tsx          # Main application component
+├── public/
+│   └── favicon.ico
+├── package.json
+└── README.md
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contributions are welcome. Please feel free to submit a Pull Request.
 
-## Deploy on Vercel
+## Support
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you find this tool helpful, consider supporting its development:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Buy Me a Coffee: https://buymeacoffee.com/doshafrancc
+- USDT (TRC20): `TC1xVYzpPdgkXS8ipXWMbURTz7uLGzBp4T`
+
+## License
+
+MIT License - feel free to use this project for personal or commercial purposes.
+
+## Author
+
+Built by Frank - Creator of [Lobocon](https://lobocon.co), a construction project management platform that helps you track if your projects will make money.
+
+## Disclaimer
+
+This tool is for informational purposes only. Please consult with a healthcare professional before starting any deworming regimen. The information provided is based on WHO guidelines but is not a substitute for professional medical advice.
